@@ -943,3 +943,110 @@ section {
         width: 100%;
     }
 }
+.contact-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+}
+
+.contact-details {
+    margin: 2rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
+.form-title {
+    font-weight: 700;  /* Makes it bold */
+    font-size: 1.5rem; /* Slightly larger */
+    margin-bottom: 1.5rem;
+    color: #fff;       /* Or your preferred text color */
+}
+
+/* If you want it extra heavy with a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.form-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
