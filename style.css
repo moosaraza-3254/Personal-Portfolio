@@ -1050,3 +1050,119 @@ section {
     font-size: 1.5rem;
     letter-spacing: 0.5px;
 }
+/* Add these to your existing CSS */
+
+/* Facebook button color */
+.social-btn.facebook:hover {
+    background: rgba(24, 119, 242, 0.2); /* Facebook blue */
+    color: #1877f2;
+}
+
+/* Instagram button color */
+.social-btn.instagram:hover {
+    background: rgba(225, 48, 108, 0.2); /* Instagram gradient start */
+    color: #e1306c;
+}
+
+/* Instagram gradient alternative (more fancy) */
+.social-btn.instagram {
+    background: linear-gradient(45deg, 
+                rgba(225, 48, 108, 0.1), 
+                rgba(253, 228, 0, 0.1));
+}
+
+.social-btn.instagram:hover {
+    background: linear-gradient(45deg, 
+                rgba(225, 48, 108, 0.2), 
+                rgba(253, 228, 0, 0.2));
+}
+
+/* Adjust spacing for additional buttons */
+.social-buttons {
+    gap: 0.8rem; /* Reduced slightly to fit more buttons */
+}
+/* Social buttons container */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center; /* or flex-start if you prefer left-aligned */
+}
+
+/* Base button style */
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 255, 255, 0.1); /* subtle cyan background */
+    color: #ffffff; /* white icons */
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Email button - added class to your existing link */
+.social-buttons a[href*="mail.google.com"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 255, 255, 0.1);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+/* Hover effects */
+.social-btn:hover, 
+.social-buttons a[href*="mail.google.com"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* LinkedIn */
+.social-btn.linkedin:hover {
+    background: #0077b5; /* LinkedIn blue */
+    color: white;
+}
+
+/* Email/Gmail */
+.social-buttons a[href*="mail.google.com"]:hover {
+    background: #D44638; /* Gmail red */
+    color: white;
+}
+
+/* Facebook */
+.social-btn.facebook:hover {
+    background: #1877f2; /* Facebook blue */
+    color: white;
+}
+
+/* Instagram */
+.social-btn.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, 
+                              #fdf497 0%, 
+                              #fdf497 5%, 
+                              #fd5949 45%,
+                              #d6249f 60%,
+                              #285AEB 90%);
+    color: white;
+}
+
+/* Pulse animation on hover */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.social-btn:hover i,
+.social-buttons a[href*="mail.google.com"]:hover i {
+    animation: pulse 0.5s ease;
+}
